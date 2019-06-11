@@ -106,4 +106,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>rmdir /S /Q Tools &gt;NUL
+mkdir Tools &gt;NUL
+copy ..\..\Tools\*.*  Tools /Y &gt;NUL</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>del /F /Q *.xml
+del /F /Q *.config
+del /F /Q *.pdb</PostBuildEvent>
+  </PropertyGroup>
 </Project>
