@@ -29,6 +29,10 @@ namespace IOptimizer
         [STAThread]
         static void Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                args = new[] {"--help"};
+            }
             FileInfo[] files;
             Parser.Default.ParseArguments<Options>(args)
                 .WithParsed<Options>(opts =>
