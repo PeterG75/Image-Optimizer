@@ -2,7 +2,7 @@
 <pre>
 Image optimizer binary to use with <a href="https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-optimize-images">Optimize Images</a> or windows command prompt
 
-Download binaries :
+Download binaries : https://ci.appveyor.com/project/ymg2006/image-optimizer/build/artifacts
 
 Config for Optimize Images of vscode :
     "optimizeImages.app": "C:\\Path to\\IOptimizer\\IOptimizer.exe",
